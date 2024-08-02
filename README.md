@@ -92,8 +92,3 @@ This project is a Java-based web application designed to manage a bookstore. It 
 - **META-INF**: Configuration and metadata files.
 - **WEB-INF**: Contains web application configuration files and libraries.
 
-## Installation and Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/kalp26/Ebook.git
