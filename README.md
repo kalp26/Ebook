@@ -96,4 +96,4 @@ This project is a Java-based web application designed to manage a bookstore. It 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/kalp26/Ebook.git
