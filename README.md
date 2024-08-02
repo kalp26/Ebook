@@ -87,6 +87,9 @@ This project is a Java-based web application designed to manage a bookstore. It 
 - [cart.java](cart.java)
 - [web.xml](web.xml)
 
+### Database
+- [ebook.sql](ebook.sql)
+
 ### META-INF and WEB-INF Directories
 
 - **META-INF**: Configuration and metadata files.
