@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: rgba(189, 176, 176, 0.5) 
+}
+
+section{
+    padding: 2rem 3%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.heading span{
+    background: black;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+div.tagline{
+    margin: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.tagline h3{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .3rem solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgb(253, 70, 70);
+    color: #fff;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .3rem solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(253, 70, 70);
+    color: #fff;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 7%;
+    background: #fff;
+    box-shadow: 1px 1px lightblue;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin:0 2rem;
+    color: black;    
+    border-radius: 3px;
+    border-color: black;
+    padding: 7px 20px;
+    border-style: none none solid none ;
+}
+
+.header .navbar a:hover{
+    margin:0 2rem;
+    background-color: rgb(253, 70, 70);
+    border-color: black;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: none none solid none ;
+}
+
+.header .icons label{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-right: .2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons label:hover{
+    background: rgb(253, 70, 70);
+    color: #fff;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border-color: rgb(253, 70, 70);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s ease-in;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: black;
+    border-color: rgb(253, 70, 70);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    border-color: rgb(253, 70, 70);
+}
+
+.header .search-form label:hover{
+    color: rgb(0, 0, 0);
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    width: 35rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #ffffff;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s ease;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img{
+    height: 10rem;
+}
+
+
+.header .shopping-cart .box img .content h3{
+    color: black;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box img .content span{
+    color: lightcoral;
+    font-size: 1.7rem;
+}
+
+.header .shopping-cart .box img .content .quantity{
+    padding-left: 1rem;
+
+}
+
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: black;
+}
+
+.header .shopping-cart .btn1{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(books.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3{
+    color: black;
+    font-size: 3rem;
+}
+
+.home .content h3 span{
+    color: rgb(253, 70, 70);
+    font-size: 3rem;
+}
+
+.home .content p{
+    color: rgb(241, 241, 241);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+
+.topseller .product-slider{
+    padding: 1rem;
+}
+
+.topseller .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+.topseller .product-slider .box{
+    background: #fff;
+    margin: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    border: solid black 1px;
+    transition: .2s linear;
+}
+.topseller .product-slider .box:hover{
+    border: solid rgb(253, 70, 70) 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topseller .product-slider .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.topseller .product-slider .box h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.topseller .product-slider .box .price{
+    font-size: 2rem;
+    color: lightseagreen;
+    padding: .5rem 0;
+}
+
+.topseller .product-slider .box .starts{
+    font-size: 2rem;
+    color: yellow;
+    padding: .5rem 0;
+}
+
+
+
+.allc .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+.allc .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+}
+.allc.box-container .box:hover{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.allc .box-container .box img{
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+}
+.us{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #333;
+    opacity: 0.6;
+    color: white;
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+}
+.blogs .box-container .box:hover{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogs .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: solid black;
+}
+
+.blogs .box-container .box .content .icons a{
+   color: aqua;
+   font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a:hover{
+    color: black;
+}
+
+.blogs .box-container .box .content .icons a i{
+    color: rgb(0, 0, 0);
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box .content h3{
+    line-height: 1.8;
+    color: black;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.blogs .box-container .box .content p{
+    line-height: 1.8;
+    color: black;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box1 {
+    flex: 1;
+    max-width: calc(25% - 20px);
+    margin: 10px;
+}
+
+.footer .box-container .box1 h3 {
+    font-size: 1.39rem;
+    margin-bottom: 10px;
+}
+
+.footer .box-container .link {
+    display: block;
+    margin: 5px 0;
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.footer .box-container .link:hover {
+    color: white;
+}
+
+.footer .box-container .box1 .bi {
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
+
+.footer .box-container .box1 .bi:hover {
+    color: #fff;
+}
+
+.footer .box-container .box1 .share {
+    color: rgb(36, 94, 229);
+    margin-left: 12px;
+}
+.footer .box-container .box1 .share:hover {
+    color: #fff;
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+
